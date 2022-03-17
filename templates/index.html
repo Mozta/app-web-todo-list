@@ -20,28 +20,17 @@
 
         <div>
             <ul>
-                <li>
-                    <div class="card text-white bg-secondary mb-3" >
-                        <div class="card-body">
-                          <h5 class="card-title">Secondary card title</h5>
+                {% for task in tasks %}
+                    <li>
+                        <div class="card text-white bg-secondary mb-3" >
+                            <div class="card-body">
+                                <h5 class="card-title">{{task['name']}}</h5>
+                            </div>
                         </div>
-                      </div>
-                </li>
-                <li>
-                    <div class="card text-white bg-secondary mb-3" >
-                        <div class="card-body">
-                          <h5 class="card-title">Secondary card title</h5>
-                        </div>
-                      </div>
-                </li>
-                <li>
-                    <div class="card text-white bg-secondary mb-3" >
-                        <div class="card-body">
-                          <h5 class="card-title">Secondary card title</h5>
-                        </div>
-                      </div>
-                </li>
+                    </li>
+                {% endfor %}
             </ul>
+            
         </div>
     </div>
 
